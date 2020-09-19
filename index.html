@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELAB - Portal za prijavu - HandsON</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#hero">Početak</a>
+        <a href="#o-projektu">O projektu</a>
+        <a href="#prijava">Prijava</a>
+    </nav>
+    <section id="hero" class="hero two-sections centered">
+        <div>
+            <h2>Prijava za HandsOn</h2>
+            <p>Na ovom portalu se možete prijaviti za HandsOn radionice</p>
+            <a href="#prijava" class="button">Prijavi se</a>
+        </div>
+        <div class="hero-img-wrapper">
+            <img src="/img/hero_ilustracija.svg" alt="hero ilustracija" />
+        </div>
+    </section>
+
+
+    <section id="o-projektu" class="o-projektu">
+        <h2>O projektu</h2>
+        <p>Katedra za elektronsko poslovanje organizuje Elab Hands-On radionice na kojima će studenti imati priliku da steknu praktična
+            znanja o savremenim tehnologijama, metodama i tehnikama koje se primenjuju u praksi.</p>
+
+        <div class="kursevi">
+            <div class="kurs">
+                <h3>VueJS</h3>
+                <p>
+                    Pozivamo vas na ovonedeljnu radionicu Uvod u Vue.js u okviru Elab Hands-On serijala! Radionica će se održati u utorak,
+                    10.12.2019., u kabinetu 304 u dva termina: od 17h i od 18h.
+                </p>
+            </div>
+
+            <div class="kurs">
+                <h3>React</h3>
+                <p>
+                    Pozivamo vas na ovonedeljnu radionicu Uvod u React u okviru Elab Hands-On serijala! Radionica će se održati u utorak,
+                    03.12.2019., u kabinetu 304 u dva termina: od 17h i od 18h.
+                </p>
+            </div>
+            <div class="kurs">
+                <h3>Instagram API</h3>
+                <p>Pozivamo vas na ovonedeljnu radionicu Instagram API u okviru Elab Hands-On serijala! Radionica će se održati u sredu,
+                    20.05.2020. u 18h, online na Elab Moodle platformi u okviru kursa HandsOn. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="prijava" class="prijava two-sections">
+        <div>
+            <h2>Prijava</h2>
+            <p>Popunite formu, a mi ćemo Vas kontaktirati sa dodatnim informacijama!</p>
+        </div>
+        <div>
+            <form>
+                <input id="name" name="name" type="text" placeholder="Ime i prezime">
+                <input id="email" name="email" type="email" placeholder="Email">
+                <select id="workshop" name="workshop">
+                    <option disabled value="0" selected>Radionica</option>
+                    <option value="Vue">VueJS</option>
+                    <option value="React">React</option>
+                    <option value="InstagramAPI">Instagram API</option>
+                </select>
+                <button class="button">Prijavi se</button>
+        </div>
+        </form>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

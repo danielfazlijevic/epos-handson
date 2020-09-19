@@ -1,0 +1,164 @@
+:root {
+  --dark: #16161a;
+  --white: #fffffe;
+  --gray: #94a1b2;
+  --purple: #7f5af0;
+  --black: #16161a;
+  --dark-gray: #242629;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--dark);
+  color: var(--white);
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-size: 2.55rem;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+section {
+  padding: 2rem 2rem;
+}
+
+nav{
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    transition: 0.7s;
+}
+
+nav.background{
+    background: rgba(0, 0, 0, 0.85);
+}
+
+nav a{
+    margin-right: 15px;
+}
+
+p {
+  color: var(--gray);
+  margin-top: 12px;
+  max-width: 768px;
+}
+
+.hero img {
+  max-width: 100%;
+  max-height: 400px;
+  padding-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.button {
+  background: var(--purple);
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 600;
+  border: 0;
+  outline: none;
+  color: var(--white);
+  transition: box-shadow 0.7s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 16px rgba(119, 0, 255, 0.253);
+}
+
+.hero-img-wrapper img {
+  margin: 0 auto;
+}
+
+.o-projektu {
+  background: var(--dark-gray);
+}
+
+.kursevi {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.kurs {
+  background: var(--black);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  height: 2.5rem;
+}
+
+input,
+select {
+  padding: 10px 15px;
+  background: var(--dark-gray);
+  outline: none;
+  border: 0;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+::placeholder {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .two-sections {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .two-sections div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .two-sections.centered div {
+    align-items: start;
+    justify-content: center;
+  }
+
+  .two-sections img {
+    max-height: 350px;
+  }
+
+  .kursevi {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  form {
+    padding-top: 4rem;
+    max-width: 400px;
+  }
+}
