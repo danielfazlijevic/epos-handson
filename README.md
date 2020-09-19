@@ -15,6 +15,8 @@ Sajt ima jednu stranicu sa više sekcija:
 Prilikom dizajniranja i kodiranja, korišćen je mobile-first princip što znači da se pre svega razvijalo za mobilni telefon, nakon čega su dodate ispravke za veće ekrane. 
 Za layout koristi i Grid i Flexbox. 
 
+Za boje su korišćene CSS varijable pa vrlo lako možemo promeniti boje odnosno temu sajta.
+
 Forma za prijavu ima validaciju za sve vrednosti i takođe čuva polja za ime i email u LocalStorage-u browsera što nam omogućava da te podatke zapamtimo i automatski popunimo kada korisnik sledeći put uđe na sajt.
 
 Takođe, javascript skripta je napravljena koja menja izgled menija u odnosu na skrol stranice.
